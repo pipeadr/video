@@ -1,17 +1,19 @@
 "use strict";
 // exports.__esModule = true;
 var AutoPlay = /** @class */ (function () {
-    function AutoPlay() {
+    class AutoPlay {
+        constructor() {
+        }
+        run(player) {
+            if (!player.media.muted) {
+                player.media.muted = true;
+                !player.play() ? player.play() : player.play();
+            }
+            else {
+                !player.play() ? player.play() : player.play();
+            }
+        }
     }
-    AutoPlay.prototype.run = function (player) {
-        if (!player.media.muted) {
-            player.media.muted = true;
-            player.play();
-        }
-        else {
-            player.play;
-        }
-    };
     return AutoPlay;
 }());
 // exports["default"] = AutoPlay;

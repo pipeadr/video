@@ -4,7 +4,7 @@ var MediaPlayer = /** @class */ (function () {
     function MediaPlayer(config) {
         this.media = config.rp;
         this.vol = config.vl;
-        this.plugins = config.plugins || [];
+        this.plugins = config.plugins;
         this.initplugins();
     }
     MediaPlayer.prototype.initplugins = function () {
@@ -15,14 +15,12 @@ var MediaPlayer = /** @class */ (function () {
     };
     MediaPlayer.prototype.play = function () {
         this.media.paused ? this.media.play() : this.media.pause();
-        console.log(this.media.muted);
     };
     MediaPlayer.prototype.pause = function () {
         this.media.pause();
     };
     MediaPlayer.prototype.silencio = function () {
         this.media.muted ? this.media.muted = false : this.media.muted = true;
-        console.log(this.media.muted);
     };
     MediaPlayer.prototype.volume = function () {
         var volumen = this.vol.value;
@@ -32,4 +30,4 @@ var MediaPlayer = /** @class */ (function () {
     return MediaPlayer;
 }());
 // exports["default"] = MediaPlayer;
-export default MediaPlayer;
+export default MediaPlayer;;

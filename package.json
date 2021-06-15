@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "ppl": "tsc assets/index.ts",
     "Media": "tsc assets/MediaPlayer.ts",
-    "AutoPlay": "tsc assets/plugins/AutoPlay.ts"
+    "AutoPlay": "tsc assets/plugins/AutoPlay.ts",
+    "AutoPause": "tsc assets/plugins/AutoPause.ts"
   },
   "repository": {
     "type": "git",
