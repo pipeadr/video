@@ -3,6 +3,7 @@
 var MediaPlayer = /** @class */ (function () {
     function MediaPlayer(config) {
         this.media = config.rp;
+        this.vol = config.vl;
     }
     MediaPlayer.prototype.play = function () {
         this.media.paused ? this.media.play() : this.media.pause();
@@ -13,7 +14,15 @@ var MediaPlayer = /** @class */ (function () {
     MediaPlayer.prototype.silencio = function () {
         this.media.muted ? this.media.muted = false : this.media.muted = true;
     };
+    MediaPlayer.prototype.volume = function () {
+        //   this.media.volume = 0.5;
+        // this.media.volume = value;
+        // console.log(this.vol);
+        // console.log(this.vol.value);
+        // console.log(this.media.volume);
+        this.media.volume = this.vol.value;
+
+    };
     return MediaPlayer;
 }());
-// exports["default"] = MediaPlayer;
 export default MediaPlayer;

@@ -55,3 +55,6 @@ body {
     background: #fff;
     color: #030303;
   }
+  input[type='range'] {
+    outline: none;
+  }
