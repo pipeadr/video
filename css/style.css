@@ -1,0 +1,57 @@
+*{
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html
+{
+    font-size: 62.5%;
+}
+body {
+    background: #eeeeee;
+    color: #030303;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  header {
+    text-align: center;
+    padding: 3rem 0;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(209,85,57,0.969625350140056) 100%, rgba(0,212,255,1) 100%);
+    color: white;
+  }
+  header > h1 {
+    font-weight: normal;
+    font-style: italic;
+  }
+  main {
+    padding: 1.5rem 0;
+  }
+  .container {
+    max-width: 700px;
+    width: 100%;
+    margin: 1rem auto;
+  }
+  .movie {
+    width: 100%;
+  }
+  .padre {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+  }
+  .botones {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(209,85,57,0.969625350140056) 100%, rgba(0,212,255,1) 100%);
+    color: white;
+    padding: 1rem;
+    margin-top: 1rem;
+    border: 0.1rem solid transparent;
+  }
+  .botones:hover {
+    border: 0.1rem solid #030303;
+    background: #fff;
+    color: #030303;
+  }
