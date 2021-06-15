@@ -1,9 +1,18 @@
 class MediaPlayer {
     media: HTMLMediaElement;
-    vol: HTMLLabelElement;
+    vol: HTMLInputElement;
+    plugins: Array<any>;
+    
     constructor(config) {
        this.media = config.rp;
        this.vol = config.vl;
+       this.plugins = config.plugins;
+       this.initplugins();
+    }
+    private initplugins() {
+      this.plugins.forEach(plugin => {
+        plugin.run(this)
+      });
     }
   play() {
    this.media.paused ? this.media.play() : this.media.pause();
@@ -15,12 +24,9 @@ class MediaPlayer {
     this.media.muted ? this.media.muted = false : this.media.muted = true;
   }
   volume() {
-    //   this.media.volume = 0.5;
-    // this.media.volume = value;
-    // console.log(this.vol);
-    // console.log(this.vol.value);
-    // console.log(this.media.volume);
-    // this.media.volume = this.vol.value;
+    let volumen = this.vol.value;
+    let v = Number(volumen);
+    this.media.volume = v;
   }
 } 
 

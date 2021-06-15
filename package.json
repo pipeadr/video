@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "ppl": "tsc assets/index.ts",
-    "Media": "tsc assets/MediaPlayer.ts"
+    "Media": "tsc assets/MediaPlayer.ts",
+    "AutoPlay": "tsc assets/plugins/AutoPlay.ts"
   },
   "repository": {
     "type": "git",
