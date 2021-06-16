@@ -30,4 +30,4 @@ var MediaPlayer = /** @class */ (function () {
     return MediaPlayer;
 }());
 // exports["default"] = MediaPlayer;
-export default MediaPlayer;;
+export default MediaPlayer;
